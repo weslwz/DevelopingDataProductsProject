@@ -16,7 +16,7 @@ shinyServer(function(input, output) {
     # computes the trajectory
     T <- seq(0, t, length.out=300)
     X <- vx0 * T
-    Y <- -0.5*g*T^2 + vy0*T + y0
+    Y <- -0.5*g*T^2 + vy0*T+y0
 
     if(input$xmax >  input$xmin & input$ymax>input$ymin) {
       plot(X, Y, type="l", xlab="distance (m)", ylab="height (m)", xlim=c(input$xmin,input$xmax), ylim=c(input$ymin,input$ymax))
