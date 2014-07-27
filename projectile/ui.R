@@ -4,6 +4,7 @@ shinyUI(fluidPage(
   titlePanel("Projectile Trajectory"),
   sidebarLayout(
     sidebarPanel(
+        "The following application plots a projectile's trajectory until it hits the ground",
         wellPanel(
           h4("Trajectory Control", style="color:blue"),
           numericInput("height", label = "Initial Height (m)", value = 30, min=0, step=0.1),
