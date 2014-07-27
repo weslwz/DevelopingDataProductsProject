@@ -14,11 +14,11 @@ shinyUI(fluidPage(
         wellPanel(
           h4("Axis Control", style="color:blue"),
           fluidRow(
-            column(4, numericInput("xmin", "x-min", value=0, min=0)),
+            column(4, numericInput("xmin", "x-min", value=0)),
             column(4, numericInput("xmax", "x-max", value=100))
           ),
           fluidRow(
-            column(4, numericInput("ymin", "y-min", value=0)),
+            column(4, numericInput("ymin", "y-min", value=0, min=0)),
             column(4, numericInput("ymax", "y-max", value=100))
           )
         )
